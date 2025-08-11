@@ -115,7 +115,7 @@ app.get("/download-invoice/:id", async (req, res) => {
     .fontSize(10)
     .text(`Order Date: ${formattedOrderDate2}`, 400)
     .moveDown(0.5);
-  doc.fontSize(10).text("Channel: SHIPEX", 400).moveDown(0.5);
+  doc.fontSize(10).text("Channel: SECURE TRANSIT", 400).moveDown(0.5);
   doc
     .fontSize(10)
     .text(`Payment Method: ${order.paymentDetails.method}`, 400)

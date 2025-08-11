@@ -73,7 +73,7 @@ const createWooCommerceWebhook = async (
       (webhook) =>
         webhook.topic.includes("order") &&
         webhook.delivery_url ===
-          "https://api.shipexindia.com/v1/channel/webhook/woocommerce"
+          "https://api.securetransit.com/v1/channel/webhook/woocommerce"
     );
 
     if (existingWebhook) {
@@ -88,7 +88,7 @@ const createWooCommerceWebhook = async (
         name: "Order Created Webhook",
         topic: "order.created",
         delivery_url:
-          "https://api.shipexindia.com/v1/channel/webhook/woocommerce",
+          "https://api.securetransit.com/v1/channel/webhook/woocommerce",
         status: "active",
       },
       {

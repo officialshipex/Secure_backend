@@ -15,7 +15,7 @@ emailOtpRouter.post("/send-email-otp", async (req, res) => {
   console.log("9999",otp)
     // Email Content
     const mailOptions = {
-      from: '"Shipex Team" <support@shipexindia.com>',
+      from: '"Secure Transit Team" <support@securetransit.com>',
       to: email,
       subject: "Your OTP Code",
       html: `<table cellspacing="0" cellpadding="0" style="background-color: #F4F6F7; border: 1px solid #eee; width: 100%;">
@@ -28,7 +28,7 @@ emailOtpRouter.post("/send-email-otp", async (req, res) => {
                     <div
                         style="background-color: #25586B; padding: 40px; text-align: center; background-image: url(../images/sampleTemplates/otp.svg); background-repeat: no-repeat; background-position: calc( 100% - 20px ) 20px; background-size: 50px;">
                         <h2 style="color: #3F2955; margin: 0px;">
-                            <span class="size" style="font-size: 32px"><i>Shipex India</i></span><br></h2>
+                            <span class="size" style="font-size: 32px"><i>Secure Transit</i></span><br></h2>
                     </div>
                     <div
                         style="padding: 40px 50px; background-image: url(../images/sampleTemplates/shadow.svg); background-repeat: no-repeat; background-position: top; background-size: contain;">
@@ -51,10 +51,10 @@ emailOtpRouter.post("/send-email-otp", async (req, res) => {
                         <p style="font-size: 14px; margin: 0; margin: 35px 0;  line-height: 22px;">If you didn't request
                             this one time password, ignore the email.</p>
                         <p style="font-size: 14px; margin: 0; margin-bottom: 35px; line-height: 22px;">If you'd like to
-                            know more about Shipex or want to get in touch with us, get in touch with our
+                            know more about Secure Transit or want to get in touch with us, get in touch with our
                             customer support team.</p>
                         <p style="font-size: 14px; margin: 0; line-height: 22px;">Thank you,</p>
-                        <p style="font-size: 14px; margin: 0; line-height: 22px;">Team Shipex</p>
+                        <p style="font-size: 14px; margin: 0; line-height: 22px;">Team Secure Transit</p>
                     </div>
                 </div>
             </td>
