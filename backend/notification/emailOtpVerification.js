@@ -15,7 +15,7 @@ emailOtpRouter.post("/send-email-otp", async (req, res) => {
   console.log("9999",otp)
     // Email Content
     const mailOptions = {
-      from: '"Secure Transit Team" <support@securetransit.com>',
+      from: '"Secure Transit Team" <info@securetransit.in>',
       to: email,
       subject: "Your OTP Code",
       html: `<table cellspacing="0" cellpadding="0" style="background-color: #F4F6F7; border: 1px solid #eee; width: 100%;">
